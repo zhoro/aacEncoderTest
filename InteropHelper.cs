@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-namespace accEncodetTest
+namespace accEncoderTest
 {
     public static class InteropHelper
     {

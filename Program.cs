@@ -1,7 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 
-namespace accEncodetTest
+namespace accEncoderTest
 {
     class Program
     {
@@ -14,6 +15,7 @@ namespace accEncodetTest
         static void Main(string[] args)
         {
             Console.WriteLine("AAC Encoder test!");
+            DllMap.Register(Assembly.GetExecutingAssembly());
             if (!AacEncoder.EncoderInit(_sampleRate, _channels, _bitRate))
             {
                 Console.WriteLine("AAC Encoder NOT initialized!");

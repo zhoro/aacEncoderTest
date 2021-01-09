@@ -4,7 +4,7 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <RootNamespace>accEncodeкTest</RootNamespace>
+        <RootNamespace>accEncoderTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,6 +16,9 @@
       </None>
       <None Update="input.wav">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="libfdk-aac.so">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
