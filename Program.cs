@@ -17,6 +17,7 @@ namespace accEncodetTest
             if (!AacEncoder.EncoderInit(_sampleRate, _channels, _bitRate))
             {
                 Console.WriteLine("AAC Encoder NOT initialized!");
+                return;
             }
 
             var inputBufferSize = AacEncoder.GetInputBufferSize();
